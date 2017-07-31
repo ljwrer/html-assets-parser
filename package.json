@@ -1,0 +1,31 @@
+{
+  "name": "html-assets-parser",
+  "version": "1.0.0",
+  "description": "a simpale and fast html assets url parser",
+  "main": "lib/index.js",
+  "author": "ljwrer <ljwrer@sina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastparse": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljwrer/html-assets-parser"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nyc": "^11.1.0",
+    "rollup": "^0.45.2",
+    "rollup-plugin-commonjs": "^8.0.2"
+  },
+  "scripts": {
+    "pretest": "eslint src --fix",
+    "build": "rollup -c",
+    "test": "nyc mocha"
+  }
+}
